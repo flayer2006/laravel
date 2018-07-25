@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello,Laravel! -- by soitis
+                    <!-- Hello,Laravel! -- by soitis -->
+                    {{$website}}
                 </div>
 
                 <div class="links">
