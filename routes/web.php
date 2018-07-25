@@ -37,3 +37,12 @@ Route::view('view','welcome',['website' => 'Laravel 学院']);
 Route::get('user/{id}',function($id){
     return 'user '.$id;
 });
+Route::get('posts/{post}/comments/{comment}',function($postId,$commentId){
+    return $postId . '-' .$commentId;
+});
+Route::get('names/{name?}',function($name = 'john'){
+    return $name;
+})->where('name','[A-Za-z]+');
+Route::get('names/{id?}',function($id = '0'){
+    return $id;
+})->where('id','[0-9]+');
